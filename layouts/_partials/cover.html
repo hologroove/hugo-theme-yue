@@ -1,0 +1,10 @@
+{{ with .Resources }}
+    {{ with .GetMatch "{cover.*,cover-*,*.jpg,*.png,*.jpeg}" }}
+         {{ $cover := .Resize "600x" }}
+         {{ with $cover }}
+              <div class="cover-image">
+                <img src="{{ .Permalink }}"/>
+              </div>
+         {{ end }}
+    {{ end }}
+{{ end }}

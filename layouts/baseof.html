@@ -4,9 +4,14 @@
   {{ partial "head.html" . }}
 </head>
 <body class="body">
-  <header class="header">
-    {{ partial "header.html" . }}
-  </header>
+  <div id="header-wrapper">
+    <header class="header">
+      {{ partial "header.html" . }}
+    </header>
+    <header class="header-background">
+      {{ partial "header_background.html" . }}
+    </header>
+  </div>
   <main class="main">
     {{ block "main" . }}{{ end }}
   </main>

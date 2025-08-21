@@ -5,7 +5,7 @@ module:
     min: 0.147.1
 
 params:
-  toc: true # Table of Contents
+  toc: false # Table of Contents
   tocFolded: true
 
 markup:
