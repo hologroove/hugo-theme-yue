@@ -253,35 +253,6 @@ a:hover {
   z-index: -100;
 }
 
-
-.header-background {
-  -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-  mask-image: gradient(linear, left 90%, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-  transform: perspective(100px) rotateX(10deg) scale(2, 1) translateZ(0);
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1px;
-  -webkit-background-clip: content-box;
-  -webkit-backface-visibility: hidden;
-  outline: 1px solid transparent;
-  transform-origin: bottom center;
-  will-change: transform;
-}
-
-.header-background {
-  // background-position: center bottom;
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, #{$color-darkturquoise} 2px, transparent 2px),
-  linear-gradient(to bottom, #{$color-darkturquoise} 1px, transparent 2px);
-  filter: brightness(50%);
-}
-
 .cover-image img {
   object-fit: cover;
   min-width: 100%; // flex-shrink: 0;
